@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Acompworld task</string>
+
+    <array name="ac_types">
+        <item>--Select AC Type--</item>
+        <item>Split</item>
+        <item>Window</item>
+    </array>
+</resources>

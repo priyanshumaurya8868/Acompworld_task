@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/recordFragment">
+
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.priyanshumaurya8868.acompworldtask.ui.fragment.RecordFragment"
+        android:label="RecordFragment"
+        tools:layout="@layout/record_fragment">
+        <action
+            android:id="@+id/action_recordFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_recordFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.priyanshumaurya8868.acompworldtask.ui.fragment.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/detail_fragment"/>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.priyanshumaurya8868.acompworldtask.ui.fragment.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/welcome_fagment">
+        <action
+            android:id="@+id/action_welcomeFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+</navigation>
